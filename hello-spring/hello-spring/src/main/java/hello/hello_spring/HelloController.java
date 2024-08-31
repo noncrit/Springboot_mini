@@ -1,5 +1,7 @@
 package hello.hello_spring;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,17 +38,11 @@ public class HelloController {
 
     }
 
+    @Setter
+    @Getter
     static class Hello{
         private String name;
 
-	    public String getName() {
-		    return this.name;
-	    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
-
-  
     }
 }

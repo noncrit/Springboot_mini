@@ -8,7 +8,13 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+
+    private final MemberRepository memberRepository;
+    
+    //다른 곳에서 선언해도 같은 repository 객체를 사용하게 하기 위해 생성자로 선언
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     //회원 가입
     //단, 같은 이름의 회원은 가입 불가

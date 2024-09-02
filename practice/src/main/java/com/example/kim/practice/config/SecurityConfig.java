@@ -34,12 +34,16 @@ public class SecurityConfig {
         return http.build();
     }
 
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Bean
     public UserDetailsService userDetailsService() {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         manager.createUser(User.withUsername("user")
-                .password("password")
+                .password(passwordEncoder().encode("password"))
                 .roles("USER")
                 .build());
         return manager;

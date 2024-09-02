@@ -24,9 +24,6 @@ public class MemberService {
     //단, 같은 이름의 회원은 가입 불가
     public Long join(Member member) {
 
-        long start = System.currentTimeMillis();
-
-
         //이름 중복 회원 가입 불가
 //        Optional<Member> result = memberRepository.findByName(member.getName());
 //        result.ifPresent(m->{

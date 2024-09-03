@@ -13,7 +13,7 @@
 <!-- Display authenticated user's name -->
 <div sec:authorize="isAuthenticated()">
     <p>Welcome <span th:text="${#authentication.name}"></span></p>
-    <p>Authority : <span th:text="${#authentication.getAuthorities()}"></span></p>
+    <p>Authority: <span th:text="${#authentication.getAuthorities()}"></span></p>
 </div>
 
 <!--<div sec:authorize="!isAuthenticated()">-->

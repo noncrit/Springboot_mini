@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ff36416-ec01-4410-bbe0-1e26d02a605d" name="변경" comment="Mysql - Sprintboot - Thymeleaf connection">
+    <list default="true" id="2ff36416-ec01-4410-bbe0-1e26d02a605d" name="변경" comment="feature - initial state&#10;&#10;crate Mysql - Springtboot - Thymeleaf connection&#10;&#10;using springsecurity, made login, logout, register">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/model/UserDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/model/UserDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="master_MysqlLogin" />
+        <entry key="$PROJECT_DIR$/.." value="MysqlLogin-initalState-0903" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -67,6 +65,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1725334453" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="MysqlLogin-initalState-0903" />
                     <option name="lastUsedInstant" value="1725334136" />
@@ -109,7 +111,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.DemoApplication.executor": "Run",
-    "git-widget-placeholder": "MysqlLogin-initalState-0903",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/sdedu/Desktop/springboot_mini/hello-spring",
@@ -152,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725281071021</updated>
       <workItem from="1725281072178" duration="162000" />
-      <workItem from="1725322141190" duration="12103000" />
+      <workItem from="1725322141190" duration="12340000" />
     </task>
     <task id="LOCAL-00001" summary="Mysql - Sprintboot - Thymeleaf connection">
       <option name="closed" value="true" />
@@ -162,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725334180511</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feature - initial state&#10;&#10;crate Mysql - Springtboot - Thymeleaf connection&#10;&#10;using springsecurity, made login, logout, register">
+      <option name="closed" value="true" />
+      <created>1725334399952</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725334399952</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +191,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mysql - Sprintboot - Thymeleaf connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mysql - Sprintboot - Thymeleaf connection" />
+    <MESSAGE value="feature - initial state&#10;&#10;crate Mysql - Springtboot - Thymeleaf connection&#10;&#10;using springsecurity, made login, logout, register" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature - initial state&#10;&#10;crate Mysql - Springtboot - Thymeleaf connection&#10;&#10;using springsecurity, made login, logout, register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

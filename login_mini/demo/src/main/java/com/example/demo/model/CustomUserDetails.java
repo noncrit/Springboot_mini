@@ -11,6 +11,7 @@ import java.util.Collections;
 import java.util.stream.Collectors;
 
 //@Entity
+//DTO
 public class CustomUserDetails implements UserDetails {
 
 //    @Id

@@ -1,6 +1,5 @@
 package com.example.demo.model;
 
-import com.example.demo.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.core.userdetails.UserDetails;
 

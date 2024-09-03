@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import com.example.demo.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -25,5 +26,10 @@ public class UserDetailsTest {
         assertTrue(userDetails.isAccountNonLocked());
         assertTrue(userDetails.isCredentialsNonExpired());
         assertTrue(userDetails.isEnabled());
+    }
+
+    @Test
+    public void testRegister(){
+        User user = new User();
     }
 }

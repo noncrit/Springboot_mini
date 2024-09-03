@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <title>Home</title>
 </head>
 <body>
 <h1>Home Page</h1>
+
+<!-- User List Link -->
 <a href="/users">User List</a>
-<a href="/logout">Logout</a>
+
+<!-- Display authenticated user's name -->
+<div sec:authorize="isAuthenticated()">
+    <p>Welcome <span th:text="${#authentication.name}"></span></p>
+    <p>Authority : <span th:text="${#authentication.getAuthorities()}"></span></p>
+</div>
+
+<!--<div sec:authorize="!isAuthenticated()">-->
+<!--    <p>UnAuthenticated</p>-->
+<!--</div>-->
+
+<!-- Logout or Login Link -->
+
+<a sec:authorize="isAuthenticated()" href="/logout">Logout</a>
+<a sec:authorize="!isAuthenticated()" href="/login">Login</a>
+
+<!-- Register Link -->
+<a sec:authorize="!isAuthenticated()" href="/registerPage">Register</a>
 </body>
 </html>
+

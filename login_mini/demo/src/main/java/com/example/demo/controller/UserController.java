@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.core.SpringVersion;
 
+import java.util.Set;
+
 @Controller
 public class UserController {
 
@@ -37,21 +39,16 @@ public class UserController {
         return "login";
     }
 
-    @GetMapping("/logout")
-    public String logout() {
-        return "login";
-    }
-
-    @GetMapping("/users")
+    @GetMapping("/user-list")
     public String userList(Model model) {
         model.addAttribute("users", userRepository.findAll());
         return "user-list";
     }
 
     @PostMapping("/register")
-    public String register(@RequestParam String username, @RequestParam String password) {
+    public String register(@RequestParam String username, @RequestParam String password, @RequestParam Set<String> roles) {
         System.out.println("username : " + username);
-        userService.register(username, password);
+        userService.register(username, password,roles);
         return "redirect:/home";
     }
     @GetMapping("/registerPage")

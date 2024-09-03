@@ -14,10 +14,10 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="user : ${users}">
-        <td th:text="${user.id}"></td>
-        <td th:text="${user.username}"></td>
-        <!--<td th:text="${user.role}"></td>-->
+    <tr th:each="customUserDetails : ${users}">
+        <td th:text="${customUserDetails.id}"></td>
+        <td th:text="${customUserDetails.username}"></td>
+        <td th:text="${customUserDetails.roles}"></td>
     </tr>
     </tbody>
 

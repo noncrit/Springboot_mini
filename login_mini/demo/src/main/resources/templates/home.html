@@ -8,12 +8,15 @@
 <h1>Home Page</h1>
 
 <!-- User List Link -->
-<a href="/users">User List</a>
+<a href="/user-list">User List</a>
 
-<!-- Display authenticated user's name -->
+<!-- Display authenticated customUserDetails's name -->
 <div sec:authorize="isAuthenticated()">
     <p>Welcome <span th:text="${#authentication.name}"></span></p>
-    <p>Authority: <span th:text="${#authentication.getAuthorities()}"></span></p>
+    <p>Authorities:
+        <span th:each="auth : ${#authentication.authorities}"
+              th:text="${auth.authority}">Authority</span>
+    </p>
 </div>
 
 <!--<div sec:authorize="!isAuthenticated()">-->

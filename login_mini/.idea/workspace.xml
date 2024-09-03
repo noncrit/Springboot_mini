@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ff36416-ec01-4410-bbe0-1e26d02a605d" name="변경" comment="feature - initial state&#10;&#10;crate Mysql - Springtboot - Thymeleaf connection&#10;&#10;using springsecurity, made login, logout, register">
+    <list default="true" id="2ff36416-ec01-4410-bbe0-1e26d02a605d" name="변경" comment="basic develop branch&#10;&#10;has login, logout, register, user-list&#10;with SpringSecurity, Mysql, Thymeleaf">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/CustomErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/model/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/error/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c75b7e2-55ff-459b-a4b4-e0b62f4b0d4e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6c75b7e2-55ff-459b-a4b4-e0b62f4b0d4e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/templates/registerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/registerPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/templates/user-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/user-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/model/UserDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/model/CustomUserDetailsDetailsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +46,11 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="demo" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -46,7 +69,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="MysqlLogin-initalState-0903" />
+        <entry key="$PROJECT_DIR$/.." value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -65,6 +88,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature-0903-refac" />
+                    <option name="lastUsedInstant" value="1725341633" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="develop" />
                     <option name="lastUsedInstant" value="1725334453" />
@@ -92,6 +119,9 @@
     "accountId": "6b9895d0-1bf1-48d0-9261-0b5030188570"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -111,7 +141,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.DemoApplication.executor": "Run",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature-0903-refac",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/sdedu/Desktop/springboot_mini/hello-spring",
@@ -154,7 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725281071021</updated>
       <workItem from="1725281072178" duration="162000" />
-      <workItem from="1725322141190" duration="12340000" />
+      <workItem from="1725322141190" duration="25826000" />
     </task>
     <task id="LOCAL-00001" summary="Mysql - Sprintboot - Thymeleaf connection">
       <option name="closed" value="true" />
@@ -172,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725334399952</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="basic develop branch&#10;&#10;has login, logout, register, user-list&#10;with SpringSecurity, Mysql, Thymeleaf">
+      <option name="closed" value="true" />
+      <created>1725334550902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725334550902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +230,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mysql - Sprintboot - Thymeleaf connection" />
     <MESSAGE value="feature - initial state&#10;&#10;crate Mysql - Springtboot - Thymeleaf connection&#10;&#10;using springsecurity, made login, logout, register" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature - initial state&#10;&#10;crate Mysql - Springtboot - Thymeleaf connection&#10;&#10;using springsecurity, made login, logout, register" />
+    <MESSAGE value="basic develop branch&#10;&#10;has login, logout, register, user-list&#10;with SpringSecurity, Mysql, Thymeleaf" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic develop branch&#10;&#10;has login, logout, register, user-list&#10;with SpringSecurity, Mysql, Thymeleaf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

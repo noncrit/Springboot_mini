@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class UserDetailsTest {
+public class CustomUserDetailsDetailsTest {
 
     @Test
     public void testUserDetails() {
@@ -16,7 +16,8 @@ public class UserDetailsTest {
         user.setPassword("password");
 
         // Test UserDetails methods
-        UserDetails userDetails = user;
+
+        UserDetails userDetails = new CustomUserDetails(user);
 
         assertEquals("testuser", userDetails.getUsername());
         assertEquals("password", userDetails.getPassword());
@@ -29,6 +30,6 @@ public class UserDetailsTest {
 
     @Test
     public void testRegister(){
-        User user = new User();
+
     }
 }

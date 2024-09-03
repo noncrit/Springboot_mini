@@ -24,6 +24,11 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/", "/home", "/login","registerPage","/register").permitAll() // Allow access to these paths without authentication
+                        // /admin/**로 시작하는 모든 URL은 ADMIN 역할을 가진 사용자만 접근 가능
+                        .requestMatchers("/admin/**").hasRole("admin") //prefix ROLE_ 이 앞쪽으로 붙는형태
+                        .requestMatchers("/user-list").hasAuthority("admin") // user-list는 시작하는 모든 URL은 ADMIN 역할을 가진 사용자만 접근 가능
+
+                        .requestMatchers("/user/**").hasRole("user") // /user/**로 시작하는 모든 URL은 USER 역할을 가진 사용자만 접근 가능
                         .anyRequest().authenticated() // All other requests need authentication
                 )
                 .formLogin(formLogin -> formLogin
@@ -34,6 +39,9 @@ public class SecurityConfig {
                         .permitAll()
                         .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                         .logoutSuccessUrl("/home")
+                )
+                .exceptionHandling(exceptions -> exceptions
+                        .accessDeniedPage("/error/403") // Access denied page
                 );
         return http.build();
     }
